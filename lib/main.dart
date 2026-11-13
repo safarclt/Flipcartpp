@@ -103,14 +103,15 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
+          const SizedBox(height: 10),
         //banner
         Container(
-          height: 130,
+          height: 110,
           width: double.infinity,
-          margin: const EdgeInsets.symmetric(horizontal: 12),
+          margin: const EdgeInsets.symmetric(horizontal: 18),
           decoration: BoxDecoration(
             color:  Colors.orange,
-            borderRadius: BorderRadius.circular(12)),
+            borderRadius: BorderRadius.circular(14)),
             child: const Column(
               mainAxisAlignment : MainAxisAlignment.center,
               children: [
@@ -127,18 +128,38 @@ class _HomePageState extends State<HomePage> {
                   "Up to 50% off",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize:  18 ,
+                    fontSize:  12 ,
                   ),
                 ),
               ],
             ),
 
         ),
-        const SizedBox(height: 15),
-        //cattegory Title
-        const Padding(padding: EdgeInsets.symmetric(horizontal: 12)),
-        //child Align()
-        
+        const SizedBox(height: 10),
+        //product Tilte
+  const Padding(
+  padding: EdgeInsets.symmetric(horizontal: 16),
+  child: Align(
+    alignment: Alignment.centerLeft,
+    child: Text(
+      'Popular Products',
+      style: TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        color: Colors.black
+
+      ),
+    ),
+  ),
+),
+      //   const  SizedBox (height:10),
+             
+      //  Expanded(
+      //      child: GridView.builder(padding: const EdgeInsets.all(value), itemBuilder: itemBuilder),
+ 
+          
+   //     )
+
         ],
       ),
     );
@@ -147,3 +168,4 @@ class _HomePageState extends State<HomePage> {
 
 }
 
+//error
